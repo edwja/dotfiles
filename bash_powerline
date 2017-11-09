@@ -78,8 +78,8 @@ __powerline() {
   esac
 
   ### Ruby #######################################################
-  if [ `which rbenv 2> /dev/null` ]; then
-      __ruby_version() { printf $(rbenv version-name); }
+  if [ `rmv current 2> /dev/null` ]; then
+      __ruby_version() { printf $(rvm current); }
   elif [ `which ruby 2> /dev/null` ]; then
       __ruby_version() { printf $(ruby --version | cut -d' ' -f2); }
   else

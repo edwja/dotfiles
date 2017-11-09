@@ -27,13 +27,10 @@ conditionally_prefix_path ~/bin
 conditionally_prefix_path ~/bin/private
 conditionally_prefix_path /usr/local/opt/postgresql@9.5/bin
 
-if [ `which rbenv 2> /dev/null` ]; then
-  eval "$(rbenv init -)"
-fi
-
 if [ `which nodenv 2> /dev/null` ]; then
   eval "$(nodenv init -)"
 fi
+
 
 PATH=.:./bin:./node_modules/.bin:${PATH}
 
@@ -77,19 +74,6 @@ CDPATH=.:${CDPATH}
 ###########################################################
 
 export RBXOPT=-X19
-
-############################################################
-## Terminal behavior
-############################################################
-
-if [ -f ~/.bash_powerline ]; then
-  . ~/.bash_powerline
-fi
-
-# if [ -n "$BASH" ]; then
-#   export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
-# fi
-
 
 ############################################################
 ## Optional shell behavior
@@ -162,3 +146,19 @@ fi
 # export RUBY_GC_MALLOC_LIMIT=60000000
 # # export RUBY_FREE_MIN=200000 # Ruby <= 2.0
 # export RUBY_GC_HEAP_FREE_SLOTS=200000 # Ruby >= 2.1
+
+if [ -s "$HOME/.rvm/scripts/rvm" ]; then
+  source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session as a function
+fi
+
+############################################################
+## Terminal behavior
+############################################################
+
+# if [ -f ~/.bash_powerline ]; then
+#   . ~/.bash_powerline
+# fi
+
+# if [ -n "$BASH" ]; then
+#   export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
+# fi
