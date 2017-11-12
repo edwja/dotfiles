@@ -1,0 +1,7 @@
+# ~/.gitconfig_local template
+#
+[user]
+  email = edwja1@gmail.com
+  name = Andy Edwards
+[github]
+  user = edwja
