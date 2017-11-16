@@ -43,6 +43,10 @@
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 ;; Gotta see matching parens
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match (face-foreground 'default))
+;;(set-face-attribute 'show-paren-match nil :weight 'ultra-bold)
+(set-face-attribute 'show-paren-match nil :box t)
 (show-paren-mode t)
 
 ;; Don't truncate lines
