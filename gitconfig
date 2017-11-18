@@ -43,3 +43,9 @@
 	fetchJobs = 4
 [gpg]
 	program = gpg1
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[github]
+	oauth-token = 1e1ab04e95fccd0a33fec41849040a0345f108c0
