@@ -10,7 +10,8 @@ __powerline() {
   readonly PS_SYMBOL_LINUX='🐧 '
   readonly PS_SYMBOL_OTHER='%'
   readonly GIT_BRANCH_SYMBOL='⑂'
-  readonly GIT_BRANCH_CHANGED_SYMBOL='+'
+  readonly GIT_BRANCH_CHANGED_SYMBOL='𐄂'
+  readonly GIT_BRANCH_UNCHANGED_SYMBOL='✔︎'
   readonly GIT_NEED_PUSH_SYMBOL='⇡'
   readonly GIT_NEED_PULL_SYMBOL='⇣'
   readonly RUBY_SYMBOL='⬙'
@@ -65,17 +66,7 @@ __powerline() {
   readonly RESET="\[$(__tput sgr0)\]"
   readonly BOLD="\[$(__tput bold)\]"
 
-  # what OS?
-  case "$(uname)" in
-    Darwin)
-      readonly PS_SYMBOL=$PS_SYMBOL_DARWIN
-      ;;
-    Linux)
-      readonly PS_SYMBOL=$PS_SYMBOL_LINUX
-      ;;
-    *)
-      readonly PS_SYMBOL=$PS_SYMBOL_OTHER
-  esac
+  readonly PS_SYMBOL='$'
 
   ### Ruby #######################################################
   if [ `rmv current 2> /dev/null` ]; then
@@ -107,17 +98,21 @@ __powerline() {
 
   ### Git ########################################################
   __git_info() {
-    [ -x "$(which git)" ] || return    # git not found
+    [ -x "$(which git)" ] || return 0   # git not found
 
     local git_eng="env LANG=C git"   # force git output in English to make our work easier
     # get current branch name or short SHA1 hash for detached head
     local branch="$($git_eng symbolic-ref --short HEAD 2>/dev/null || $git_eng describe --tags --always 2>/dev/null)"
-    [ -n "$branch" ] || return  # git branch not found
+    [ -n "$branch" ] || return 0 # git branch not found
 
-    local marks
+    local marks=" "
 
     # branch is modified?
-    [ -n "$($git_eng status --porcelain)" ] && marks+=" $GIT_BRANCH_CHANGED_SYMBOL"
+    if [ -n "$($git_eng status --porcelain)" ]; then 
+        marks+="$FG_RED$GIT_BRANCH_CHANGED_SYMBOL$RESET"
+    else
+        marks+="$FG_GREEN$GIT_BRANCH_UNCHANGED_SYMBOL$RESET"
+    fi
 
     # how many commits local branch is ahead/behind of remote?
     local stat="$($git_eng status --porcelain --branch | grep '^##' | grep -o '\[.\+\]$')"
@@ -126,7 +121,7 @@ __powerline() {
     [ -n "$aheadN" ] && marks+=" $GIT_NEED_PUSH_SYMBOL$aheadN"
     [ -n "$behindN" ] && marks+=" $GIT_NEED_PULL_SYMBOL$behindN"
 
-    printf " $GIT_BRANCH_SYMBOL $branch$marks "
+    printf " ($branch$marks)"
   }
 
   ### PROMPT #####################################################
@@ -145,18 +140,13 @@ __powerline() {
     # Check the exit code of the previous command and display different
     # colors in the prompt accordingly.
     if [ $? -eq 0 ]; then
-      local BG_EXIT="$BG_DARK_GREEN"
+      local BG_EXIT="$FG_BLACK"
     else
-      local BG_EXIT="$BG_RED"
+      local BG_EXIT="$FG_RED"
     fi
 
-    PS1="\n$BG_GRAY3$FG_GRAY1 \s $RESET"
-    PS1+="$BG_MUSTARD$FG_BLACK \w $RESET"
-    PS1+="$BG_DARK_RED$FG_GRAY1$(__ruby_info)$RESET"
-    PS1+="$BG_DEEP_GREEN$FG_GRAY1$(__node_info)$RESET"
-    PS1+="$BG_BLUE$FG_GRAY1$(__git_info)$RESET\n"
-    PS1+="$BG_GRAY2$FG_BLACK \u@\h $RESET"
-    PS1+="$BG_EXIT$FG_GRAY1 $PS_SYMBOL $RESET "
+    PS1="\u@\h:\w"
+    PS1+="$(__git_info) $BG_EXIT$PS_SYMBOL$RESET "
   }
 
   PROMPT_COMMAND="ps1 && title"

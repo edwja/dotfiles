@@ -84,7 +84,7 @@ shopt -s extglob
 shopt -s checkwinsize
 
 export PAGER="less"
-export EDITOR="emacsclient -nw"
+export EDITOR="atom -n"
 
 ############################################################
 ## History
@@ -155,10 +155,10 @@ fi
 ## Terminal behavior
 ############################################################
 
-# if [ -f ~/.bash_powerline ]; then
-#   . ~/.bash_powerline
-# fi
+if [ -f ~/.bash_powerline ]; then
+  . ~/.bash_powerline
+fi
 
-# if [ -n "$BASH" ]; then
-#   export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
-# fi
+if [ -n "$BASH" ]; then
+  export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
+fi
