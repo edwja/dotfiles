@@ -25,7 +25,7 @@ conditionally_prefix_path /usr/local/heroku/bin
 conditionally_prefix_path /usr/texbin
 conditionally_prefix_path ~/bin
 conditionally_prefix_path ~/bin/private
-conditionally_prefix_path /usr/local/opt/postgresql@9.5/bin
+conditionally_prefix_path $(brew --prefix qt@5.5)/bin
 
 if [ `which nodenv 2> /dev/null` ]; then
   eval "$(nodenv init -)"
