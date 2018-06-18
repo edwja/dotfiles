@@ -146,7 +146,7 @@ __powerline() {
     fi
 
     PS1="\u@\h:\w"
-    PS1+="$(__git_info) $BG_EXIT$PS_SYMBOL$RESET "
+    PS1+="$(__git_info)\n$BG_EXIT$PS_SYMBOL$RESET "
   }
 
   PROMPT_COMMAND="ps1 && title"
