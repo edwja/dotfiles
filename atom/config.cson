@@ -1,0 +1,44 @@
+"*":
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "atom-beautify"
+      "autocomplete-plus"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    fontFamily: "Monaco"
+    preferredLineLength: 130
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "3fbf472d-932d-494b-acfa-94e6b329365f"
+  github:
+    gitDiagnostics: true
+  "linter-rubocop":
+    command: "/Users/andyedwards/.rbenv/shims/rubocop"
+  "linter-ui-default":
+    panelHeight: 174
+  "rubocop-auto-correct":
+    debugMode: true
+    rubocopCommandPath: "/Users/andyedwards/.rbenv/shims/rubocop"
+  "ruby-test":
+    cucumberAllCommand: "bundle exec cucumber --color features"
+    cucumberFileCommand: "bundle exec cucumber --color {relative_path}"
+    cucumberSingleCommand: "bundle exec cucumber --color {relative_path}:{line_number}"
+    minitestAllCommand: "bundle exec ruby -I test test"
+    minitestFileCommand: "bundle exec ruby -I test {relative_path}"
+    minitestSingleCommand: "bundle exec ruby -I test {relative_path} -n \"/{regex}/\""
+    rspecAllCommand: "bundle exec rspec --tty spec"
+    rspecFileCommand: "bundle exec rspec --tty {relative_path}"
+    rspecSingleCommand: "bundle exec rspec --tty {relative_path}:{line_number}"
+    specFramework: "rspec"
+  welcome:
+    showOnStartup: false
+".ruby.source":
+  editor:
+    tabType: "soft"

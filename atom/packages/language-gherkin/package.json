@@ -1,0 +1,62 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+        "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-11817-18475-1plptbc.kkdj10pb9"
+    ]
+  ],
+  "_from": "../d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+  "_id": "language-gherkin@1.0.4",
+  "_inCache": true,
+  "_location": "/language-gherkin",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+    "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+  "_shasum": "63eb09aef6785d12f5fdb272523396d18846a80a",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-18475-j0gzuz.qrxxtlz0k9/package.tgz",
+  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-11817-18475-1plptbc.kkdj10pb9",
+  "bugs": {
+    "url": "https://github.com/gigapixel/atom-language-gherkin/issues"
+  },
+  "dependencies": {},
+  "description": "Gherkin language support for Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "files": [
+    "grammars",
+    "settings"
+  ],
+  "homepage": "https://github.com/gigapixel/atom-language-gherkin#readme",
+  "license": "MIT",
+  "name": "language-gherkin",
+  "optionalDependencies": {},
+  "readme": "# Atom Language Gherkin\n\nGherkin Syntax Highlight for Atom Text Editor.\n\nSupport gherkin on following file type:\n* `.feature` file (cucumber, behave, etc.)\n* `.robot` file (robot-framework)\n\n## Example\n\nFeature file.\n\n![feature-syntax ](https://raw.githubusercontent.com/gigapixel/atom-language-gherkin/master/screenshots/feature-syntax.png)\n\nRobot File.\n\n![robot-syntax](https://raw.githubusercontent.com/gigapixel/atom-language-gherkin/master/screenshots/robot-syntax.png)\n\n__NOTE__: Syntax color best match with Atom `One Dark` theme.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigapixel/atom-language-gherkin.git"
+  },
+  "version": "1.0.4"
+}

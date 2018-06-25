@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+        "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-118121-65095-ymg4qu.kd7rrg4x6r"
+    ]
+  ],
+  "_from": "../d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+  "_id": "language-cucumber@0.0.1",
+  "_inCache": true,
+  "_location": "/language-cucumber",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+    "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+  "_shasum": "985011d6b58ba837076b927afd6bcf4b55281539",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-118121-65095-19gb8hh.poxf6zjjor/package.tgz",
+  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-118121-65095-ymg4qu.kd7rrg4x6r",
+  "bugs": {
+    "url": "https://github.com/5t111111/language-cucumber/issues"
+  },
+  "dependencies": {},
+  "description": "Adds syntax highlighting for Cucumber files in Atom.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/5t111111/language-cucumber#readme",
+  "keywords": [
+    "cucumber",
+    "gherkin",
+    "ruby",
+    "test"
+  ],
+  "license": "MIT",
+  "main": "./lib/language-cucumber",
+  "name": "language-cucumber",
+  "optionalDependencies": {},
+  "readme": "# language-cucumber\n\nAdds syntax highlighting for Cucumber files in Atom.\n\nCurrently supports English/Japanese only.\n\n## Thanks\n\nMost codes are copied from [cucumber-atom](https://github.com/edda/cucumber-atom).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5t111111/language-cucumber.git"
+  },
+  "version": "0.0.1"
+}

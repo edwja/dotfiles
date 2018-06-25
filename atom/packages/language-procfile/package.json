@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+        "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-11817-24940-17yicf8.yj3d2c5wmi"
+    ]
+  ],
+  "_from": "../d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+  "_id": "language-procfile@0.1.1",
+  "_inCache": true,
+  "_location": "/language-procfile",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+    "spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+  "_shasum": "da7861be6402ab9433ca4413511ad5fa1c35a736",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/d-11817-24940-sexwos.u18h9tfbt9/package.tgz",
+  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-11817-24940-17yicf8.yj3d2c5wmi",
+  "bugs": {
+    "url": "https://github.com/ckaznocha/language-procfile/issues"
+  },
+  "dependencies": {},
+  "description": "Syntax highlighting for Procfile.",
+  "devDependencies": {
+    "coffeelint": "^1.16.0"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/ckaznocha/language-procfile#readme",
+  "keywords": [
+    "Procfile"
+  ],
+  "license": "MIT",
+  "name": "language-procfile",
+  "optionalDependencies": {},
+  "readme": "# Procfile support in Atom\n[![Build Status](https://travis-ci.org/ckaznocha/language-procfile.svg?branch=master)](https://travis-ci.org/ckaznocha/language-procfile)\n[![APM Version](https://img.shields.io/apm/v/language-procfile.svg)](https://atom.io/packages/language-procfile)\n[![Dependency Status](https://david-dm.org/ckaznocha/language-procfile.svg)](https://david-dm.org/ckaznocha/language-procfile)\n[![License](http://img.shields.io/:license-mit-blue.svg)](http://ckaznocha.mit-license.org)\n\nAdds syntax highlighting for [Procfile](https://devcenter.heroku.com/articles/procfile) in Atom.\n\n## Contributing\n\nSee the `CONTRIBUTING` file.\n\n## License\nSee `LICENSE` file\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckaznocha/language-procfile.git"
+  },
+  "version": "0.1.1"
+}
