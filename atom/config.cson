@@ -7,8 +7,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "atom-light-ui"
+      "atom-light-syntax"
     ]
   editor:
     fontFamily: "Monaco"
@@ -24,6 +24,8 @@
   "linter-ui-default":
     panelHeight: 174
   "rubocop-auto-correct":
+    autoRun: true
+    correctFile: true
     debugMode: true
     rubocopCommandPath: "/Users/andyedwards/.rbenv/shims/rubocop"
   "ruby-test":
