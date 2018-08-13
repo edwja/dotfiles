@@ -84,7 +84,7 @@ shopt -s extglob
 shopt -s checkwinsize
 
 export PAGER="less"
-export EDITOR="atom -n"
+export EDITOR="vi"
 
 ############################################################
 ## History

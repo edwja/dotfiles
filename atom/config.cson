@@ -1,9 +1,10 @@
 "*":
   core:
     allowPendingPaneItems: false
+    closeDeletedFileTabs: true
     disabledPackages: [
-      "atom-beautify"
       "autocomplete-plus"
+      "rubocop-auto-correct"
     ]
     telemetryConsent: "no"
     themes: [
@@ -12,6 +13,7 @@
     ]
   editor:
     fontFamily: "Monaco"
+    fontSize: 11
     preferredLineLength: 130
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
