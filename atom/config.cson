@@ -8,12 +8,12 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
   editor:
     fontFamily: "Monaco"
-    fontSize: 11
+    fontSize: 12
     preferredLineLength: 130
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
