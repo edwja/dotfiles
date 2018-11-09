@@ -13,7 +13,7 @@
     ]
   editor:
     fontFamily: "Monaco"
-    fontSize: 12
+    fontSize: 13
     preferredLineLength: 130
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
