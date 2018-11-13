@@ -25,6 +25,7 @@
     command: "/Users/andyedwards/.rbenv/shims/rubocop"
   "linter-ui-default":
     panelHeight: 174
+    showPanel: true
   "rubocop-auto-correct":
     autoRun: true
     correctFile: true
