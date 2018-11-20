@@ -1,4 +1,6 @@
 "*":
+  "clear-night-ui":
+    layoutMode: "Compact"
   core:
     allowPendingPaneItems: false
     closeDeletedFileTabs: true
@@ -8,13 +10,12 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
+      "clear-night-ui"
+      "clear-night-syntax"
     ]
   editor:
     fontFamily: "Monaco"
-    fontSize: 13
-    preferredLineLength: 130
+    fontSize: 17
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
@@ -22,10 +23,9 @@
   github:
     gitDiagnostics: true
   "linter-rubocop":
-    command: "/Users/andyedwards/.rbenv/shims/rubocop"
+    command: "/Users/andy/.rbenv/shims/rubocop"
   "linter-ui-default":
     panelHeight: 174
-    showPanel: true
   "rubocop-auto-correct":
     autoRun: true
     correctFile: true
