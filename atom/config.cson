@@ -1,4 +1,6 @@
 "*":
+  "atom-beautify":
+    ruby: {}
   "clear-night-ui":
     layoutMode: "Compact"
   core:
@@ -7,15 +9,17 @@
     disabledPackages: [
       "autocomplete-plus"
       "rubocop-auto-correct"
+      "linter-erb"
+      "wrap-guide"
     ]
     telemetryConsent: "no"
     themes: [
-      "clear-night-ui"
-      "clear-night-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
   editor:
     fontFamily: "Monaco"
-    fontSize: 17
+    fontSize: 13
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
@@ -23,7 +27,7 @@
   github:
     gitDiagnostics: true
   "linter-rubocop":
-    command: "/Users/andy/.rbenv/shims/rubocop"
+    command: "/Users/andyedwards/.rbenv/shims/rubocop -R"
   "linter-ui-default":
     panelHeight: 174
   "rubocop-auto-correct":
@@ -38,9 +42,9 @@
     minitestAllCommand: "bundle exec ruby -I test test"
     minitestFileCommand: "bundle exec ruby -I test {relative_path}"
     minitestSingleCommand: "bundle exec ruby -I test {relative_path} -n \"/{regex}/\""
-    rspecAllCommand: "bundle exec rspec --tty spec"
-    rspecFileCommand: "bundle exec rspec --tty {relative_path}"
-    rspecSingleCommand: "bundle exec rspec --tty {relative_path}:{line_number}"
+    rspecAllCommand: "bin/rspec --tty spec"
+    rspecFileCommand: "bin/rspec --tty {relative_path}"
+    rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
     specFramework: "rspec"
   welcome:
     showOnStartup: false
