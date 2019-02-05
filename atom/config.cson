@@ -11,6 +11,7 @@
       "rubocop-auto-correct"
       "linter-erb"
       "wrap-guide"
+      "guard-rspec"
     ]
     telemetryConsent: "no"
     themes: [
@@ -24,8 +25,12 @@
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "3fbf472d-932d-494b-acfa-94e6b329365f"
+  "git-blame":
+    columnWidth: 339
   github:
     gitDiagnostics: true
+  "guard-rspec":
+    command: "bundle exec guard"
   "linter-rubocop":
     command: "/Users/andyedwards/.rbenv/shims/rubocop -R"
   "linter-ui-default":

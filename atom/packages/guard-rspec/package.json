@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+  "_id": "guard-rspec@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-RwMnP6CeTOAAutH6wsFJOLYlrQKrTIjI6LcOyM7xIbd6nN6oxjqcMMad/gH1YDPbMY9dLflhGDlB6Tg4NyeyzA==",
+  "_location": "/guard-rspec",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+  "_shasum": "dded7304b969dbcb2c63fa5a8bd0af41c56cb7e5",
+  "_spec": "https://www.atom.io/api/packages/guard-rspec/versions/0.4.0/tarball",
+  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-119027-29782-z5h0gu.sccoa",
+  "activationCommands": {
+    "atom-workspace": "guard-rspec:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/craigsheen/atom-guard-rspec/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-message-panel": "^1.2.4"
+  },
+  "deprecated": false,
+  "description": "Run Guard in the background and be told about failures.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/craigsheen/atom-guard-rspec#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/guard-rspec",
+  "name": "guard-rspec",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigsheen/atom-guard-rspec.git"
+  },
+  "version": "0.4.0"
+}
