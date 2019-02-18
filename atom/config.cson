@@ -12,6 +12,7 @@
       "linter-erb"
       "wrap-guide"
       "guard-rspec"
+      "linter-rubocop"
     ]
     telemetryConsent: "no"
     themes: [
