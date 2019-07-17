@@ -108,7 +108,7 @@ __powerline() {
     local marks=" "
 
     # branch is modified?
-    if [ -n "$($git_eng status --porcelain)" ]; then 
+    if [ -n "$($git_eng status --porcelain)" ]; then
         marks+="$FG_RED$GIT_BRANCH_CHANGED_SYMBOL$RESET"
     else
         marks+="$FG_GREEN$GIT_BRANCH_UNCHANGED_SYMBOL$RESET"
@@ -133,6 +133,9 @@ __powerline() {
       ;;
     screen)
       title() { echo -ne "\033_$(__title_info)\033\\"; }
+      ;;
+    *)
+      title() { echo -ne; }
       ;;
   esac
 

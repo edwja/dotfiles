@@ -8,16 +8,15 @@
     closeDeletedFileTabs: true
     disabledPackages: [
       "autocomplete-plus"
-      "rubocop-auto-correct"
-      "linter-erb"
       "wrap-guide"
       "guard-rspec"
-      "linter-rubocop"
+      "linter-erb"
+      "rubocop-auto-correct"
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
+      "one-light-ui"
+      "one-light-syntax"
     ]
   editor:
     fontFamily: "Monaco"
@@ -32,6 +31,8 @@
     gitDiagnostics: true
   "guard-rspec":
     command: "bundle exec guard"
+  linter:
+    lintOnOpen: false
   "linter-rubocop":
     command: "/Users/andyedwards/.rbenv/shims/rubocop -R"
   "linter-ui-default":
@@ -48,9 +49,9 @@
     minitestAllCommand: "bundle exec ruby -I test test"
     minitestFileCommand: "bundle exec ruby -I test {relative_path}"
     minitestSingleCommand: "bundle exec ruby -I test {relative_path} -n \"/{regex}/\""
-    rspecAllCommand: "bin/rspec --tty spec"
-    rspecFileCommand: "bin/rspec --tty {relative_path}"
-    rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
+    rspecAllCommand: "spring rspec --tty spec"
+    rspecFileCommand: "spring rspec --tty {relative_path}"
+    rspecSingleCommand: "spring rspec --tty {relative_path}:{line_number}"
     specFramework: "rspec"
   welcome:
     showOnStartup: false

@@ -1,3 +1,4 @@
+## -*- shell-script -*-
 ## This file is sourced by all *interactive* bash shells on startup.  This
 ## file *should generate no output* or it will break the scp and rcp commands.
 ############################################################
@@ -23,16 +24,16 @@ conditionally_prefix_path /usr/local/share/npm/bin
 conditionally_prefix_path /usr/local/mysql/bin
 conditionally_prefix_path /usr/local/heroku/bin
 conditionally_prefix_path /usr/texbin
-conditionally_prefix_path ~/bin
-conditionally_prefix_path ~/bin/private
-conditionally_prefix_path $(brew --prefix qt@5.5)/bin
+#conditionally_prefix_path ~/bin
+#conditionally_prefix_path ~/bin/private
+#conditionally_prefix_path $(brew --prefix qt@5.5)/bin
 
 if [ `which nodenv 2> /dev/null` ]; then
   eval "$(nodenv init -)"
 fi
 
 
-PATH=.:./bin:./node_modules/.bin:${PATH}
+#PATH=.:./bin:./node_modules/.bin:${PATH}
 
 ############################################################
 ## MANPATH
@@ -84,7 +85,7 @@ shopt -s extglob
 shopt -s checkwinsize
 
 export PAGER="less"
-export EDITOR="vi"
+export EDITOR="emacsclient"
 
 ############################################################
 ## History
@@ -143,9 +144,9 @@ fi
 ## Ruby Performance Boost (see https://gist.github.com/1688857)
 ############################################################
 
-# export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_GC_MALLOC_LIMIT=60000000
 # # export RUBY_FREE_MIN=200000 # Ruby <= 2.0
-# export RUBY_GC_HEAP_FREE_SLOTS=200000 # Ruby >= 2.1
+export RUBY_GC_HEAP_FREE_SLOTS=200000 # Ruby >= 2.1
 
 ############################################################
 ## Terminal behavior
@@ -155,6 +156,10 @@ if [ -f ~/.bash_powerline ]; then
   . ~/.bash_powerline
 fi
 
-if [ -n "$BASH" ]; then
-  export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
-fi
+# if [ -n "$BASH" ]; then
+#   export PS1='\[\033[32m\]\n[\s: \w] (⬥ $(ruby_prompt)) (⬢ $(node_prompt)) $(git_prompt)\n\[\033[31m\][\u@\h]\$ \[\033[00m\]'
+# fi
+# if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+#   . /usr/local/etc/bash_completion.d/git-prompt.sh
+#   export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# fi

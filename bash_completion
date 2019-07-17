@@ -1,3 +1,4 @@
+# -*- sh-mode -*-
 # http://onrails.org/articles/2006/11/17/rake-command-completion-using-rake
 if [ -f ~/bin/rake_completion ]; then
   . ~/bin/rake_completion
@@ -44,3 +45,7 @@ __git_shortcut gd   diff
 __git_shortcut gcp  cherry-pick
 __git_shortcut gr   remote
 __git_shortcut gcherry log
+
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  . /usr/local/etc/bash_completion.d/git-completion.bash
+fi

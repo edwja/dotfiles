@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-  "_id": "platformio-ide-terminal@2.9.0",
+  "_from": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+  "_id": "platformio-ide-terminal@2.9.1",
   "_inBundle": false,
-  "_integrity": "sha512-M5XVqws9+Uy+MYc9qrn/TvcytxDjTTKNA7KZ55c3DjwdrcUTtxhhlkZh2gAA3vKnE3/GY6z8lzACRPLkxJdpKg==",
+  "_integrity": "sha512-TKRRUytTqG2xcY9P/m88iEvrgWincWnVwZ8A9G3m5t/9vLl5DjbXBTLdvhfsg+GrUrDWYmU+MNbDljMo95U5vg==",
   "_location": "/platformio-ide-terminal",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball"
+    "raw": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-  "_shasum": "1b0b3d3ad58861287d3f5931ab85cb9a94904644",
-  "_spec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.0/tarball",
-  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-119028-52992-177gxv.drv0t",
+  "_resolved": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+  "_shasum": "0da58d5ba8d9e606f0e96b705e73f0a45ef94c3a",
+  "_spec": "https://www.atom.io/api/packages/platformio-ide-terminal/versions/2.9.1/tarball",
+  "_where": "/private/var/folders/dv/5k0gmlrd25n3t4647hk4_xz00000gp/T/apm-install-dir-11953-60405-5k1sjj.fdocj",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -47,6 +47,10 @@
       "name": "Dmytro Kyrychuk",
       "email": "dmytro.kyrychuck@gmail.com",
       "url": "http://platformio.org"
+    },
+    {
+      "name": "The Community Contributors",
+      "url": "https://github.com/platformio/platformio-atom-ide-terminal/graphs/contributors"
     }
   ],
   "dependencies": {
@@ -96,5 +100,5 @@
     "type": "git",
     "url": "git+https://github.com/platformio/platformio-atom-ide-terminal.git"
   },
-  "version": "2.9.0"
+  "version": "2.9.1"
 }
