@@ -75,6 +75,7 @@ CDPATH=.:${CDPATH}
 ###########################################################
 
 export RBXOPT=-X19
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 ############################################################
 ## Optional shell behavior
@@ -85,6 +86,7 @@ shopt -s extglob
 shopt -s checkwinsize
 
 export PAGER="less"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 ############################################################
 ## History
