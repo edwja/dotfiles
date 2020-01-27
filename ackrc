@@ -7,3 +7,5 @@
 --ignore-file=is:tags
 --ignore-file=is:TAGS
 --ignore-file=is:.gitignore
+
+--type-set=spec:match:/_spec.rb$/
