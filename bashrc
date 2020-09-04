@@ -164,3 +164,11 @@ fi
 #   . /usr/local/etc/bash_completion.d/git-prompt.sh
 #   export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # fi
+
+ulimit -S -n 4096
+eval "$(rbenv init -)"
+eval "$(jenv init -)"
+
+export MBC_WORK_ROOT=$HOME/github
+
+
