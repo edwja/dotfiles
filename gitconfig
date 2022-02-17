@@ -53,3 +53,7 @@
 [user]
 	name = Andy Edwards
 	email = aedwards@merchantsbonding.com
+[rebase]
+	autoSquash = true
+[init]
+	defaultBranch = main
