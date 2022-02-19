@@ -7,6 +7,9 @@ for f in *; do
   [[ "$f" == "" || "$f" =~ ^install.* || "$f" == "README.md" ]] && continue
 
   echo "$PWD/$f -> ~/.$f"
+
+  [[ ! -L "$HOME/.$f" ]] && mv "$HOME/.$f" "$HOME/.$f.save"
+
   ln -ns "$PWD/$f" "$HOME/.$f"
 done
 
