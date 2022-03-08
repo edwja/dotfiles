@@ -18,6 +18,11 @@ function conditionally_prefix_path {
   fi
 }
 
+conditionally_prefix_path /opt/homebrew/bin
+conditionally_prefix_path /opt/homebrew/opt/postgresql@13/bin
+conditionally_prefix_path /opt/homebrew/opt/node@14/bin
+conditionally_prefix_path /opt/homebrew/opt/openjdk/bin
+
 conditionally_prefix_path /usr/local/bin
 conditionally_prefix_path /usr/local/sbin
 conditionally_prefix_path /usr/local/share/npm/bin
@@ -170,5 +175,5 @@ eval "$(rbenv init -)"
 eval "$(jenv init -)"
 
 export MBC_WORK_ROOT=$HOME/github
-
+export PARALLEL_TEST_FIRST_IS_1=true
 
