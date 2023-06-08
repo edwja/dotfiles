@@ -19,26 +19,20 @@ function conditionally_prefix_path {
 }
 
 conditionally_prefix_path /opt/homebrew/bin
-conditionally_prefix_path /opt/homebrew/opt/postgresql@13/bin
+conditionally_prefix_path /opt/homebrew/opt/postgresql@15/bin
 conditionally_prefix_path /opt/homebrew/opt/node@14/bin
-conditionally_prefix_path /opt/homebrew/opt/openjdk/bin
+conditionally_prefix_path /opt/homebrew/opt/openjdk@17/bin
 
 conditionally_prefix_path /usr/local/bin
 conditionally_prefix_path /usr/local/sbin
 conditionally_prefix_path /usr/local/share/npm/bin
 conditionally_prefix_path /usr/local/mysql/bin
 conditionally_prefix_path /usr/local/heroku/bin
-conditionally_prefix_path /usr/texbin
-#conditionally_prefix_path ~/bin
-#conditionally_prefix_path ~/bin/private
-#conditionally_prefix_path $(brew --prefix qt@5.5)/bin
 
 if [ `which nodenv 2> /dev/null` ]; then
   eval "$(nodenv init -)"
 fi
 
-
-#PATH=.:./bin:./node_modules/.bin:${PATH}
 
 ############################################################
 ## MANPATH
@@ -176,4 +170,6 @@ eval "$(jenv init -)"
 
 export MBC_WORK_ROOT=$HOME/github
 export PARALLEL_TEST_FIRST_IS_1=true
+export DISABLE_SPRING=true
 
+PATH=./bin:${PATH}
