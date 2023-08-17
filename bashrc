@@ -169,6 +169,7 @@ eval "$(rbenv init -)"
 eval "$(jenv init -)"
 
 export MBC_WORK_ROOT=$HOME/github
+export MBC_SRC=$MBC_WORK_ROOT
 export PARALLEL_TEST_FIRST_IS_1=true
 export DISABLE_SPRING=true
 
