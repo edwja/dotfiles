@@ -173,4 +173,6 @@ export MBC_SRC=$MBC_WORK_ROOT
 export PARALLEL_TEST_FIRST_IS_1=true
 export DISABLE_SPRING=true
 
-PATH=./bin:${PATH}
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
