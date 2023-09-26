@@ -2,5 +2,5 @@
 # yarn lockfile v1
 
 
-lastUpdateCheck 1695648717180
+disable-self-update-check true
 version-sign-git-tag true
