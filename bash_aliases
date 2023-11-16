@@ -101,13 +101,13 @@ function gu {
   $cmd
 }
 
-function gco {
-  if [ -z "$1" ]; then
-    git checkout master
-  else
-    git checkout $*
-  fi
-}
+# function gco {
+#   if [ -z "$1" ]; then
+#     git checkout master
+#   else
+#     git checkout $*
+#   fi
+# }
 
 function gprune {
   local remote=$1
