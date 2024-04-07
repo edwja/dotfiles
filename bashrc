@@ -165,8 +165,15 @@ fi
 # fi
 
 ulimit -S -n 4096
-eval "$(rbenv init -)"
-eval "$(jenv init -)"
+
+if [ `which rbenv 2> /dev/null` ]; then
+  eval "$(rbenv init -)"
+fi
+
+
+if [ `which jenv 2> /dev/null` ]; then
+  eval "$(jenv init -)"
+fi
 
 export MBC_WORK_ROOT=$HOME/github
 export MBC_SRC=$MBC_WORK_ROOT
