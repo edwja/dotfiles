@@ -20,7 +20,7 @@ function conditionally_prefix_path {
 
 conditionally_prefix_path /opt/homebrew/bin
 conditionally_prefix_path /opt/homebrew/opt/postgresql@15/bin
-conditionally_prefix_path /opt/homebrew/opt/node@14/bin
+conditionally_prefix_path /opt/homebrew/opt/node@20/bin
 conditionally_prefix_path /opt/homebrew/opt/openjdk@17/bin
 
 conditionally_prefix_path /usr/local/bin
@@ -180,6 +180,8 @@ export MBC_SRC=$MBC_WORK_ROOT
 export PARALLEL_TEST_FIRST_IS_1=true
 export DISABLE_SPRING=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+export NODE_OPTIONS=--openssl-legacy-provider
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
