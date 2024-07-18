@@ -29,6 +29,8 @@ conditionally_prefix_path /usr/local/share/npm/bin
 conditionally_prefix_path /usr/local/mysql/bin
 conditionally_prefix_path /usr/local/heroku/bin
 
+. "$HOME/.asdf/asdf.sh"
+
 if [ `which nodenv 2> /dev/null` ]; then
   eval "$(nodenv init -)"
 fi
@@ -182,6 +184,7 @@ export DISABLE_SPRING=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # export NODE_OPTIONS=--openssl-legacy-provider
+. "$HOME/.asdf/completions/asdf.bash"
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
