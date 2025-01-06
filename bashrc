@@ -182,6 +182,8 @@ export MBC_SRC=$MBC_WORK_ROOT
 export PARALLEL_TEST_FIRST_IS_1=true
 export DISABLE_SPRING=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+#export EVENT_DATABASE_URL=postgresql://localhost:5432/event_history_development
+
 
 # export NODE_OPTIONS=--openssl-legacy-provider
 . "$HOME/.asdf/completions/asdf.bash"
