@@ -19,7 +19,7 @@ function conditionally_prefix_path {
 }
 
 conditionally_prefix_path /opt/homebrew/bin
-conditionally_prefix_path /opt/homebrew/opt/postgresql@15/bin
+conditionally_prefix_path /opt/homebrew/opt/postgresql@16/bin
 conditionally_prefix_path /opt/homebrew/opt/node@20/bin
 conditionally_prefix_path /opt/homebrew/opt/openjdk@17/bin
 
@@ -182,7 +182,6 @@ export MBC_SRC=$MBC_WORK_ROOT
 export PARALLEL_TEST_FIRST_IS_1=true
 export DISABLE_SPRING=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-#export EVENT_DATABASE_URL=postgresql://localhost:5432/event_history_development
 
 
 # export NODE_OPTIONS=--openssl-legacy-provider
