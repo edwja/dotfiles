@@ -185,7 +185,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PGGSSENCMODE=disable
 
 # export NODE_OPTIONS=--openssl-legacy-provider
-. "$HOME/.asdf/completions/asdf.bash"
+# . "$HOME/.asdf/completions/asdf.bash"
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
