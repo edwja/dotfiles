@@ -195,8 +195,3 @@ export PGGSSENCMODE=disable
 HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
 
 export VISUAL="code -n"
-
-# zendesk MCP setup
-export ZENDESK_DOMAIN="mbc1.zendesk.com"
-export ZENDESK_EMAIL="aedwards@merchantsbonding.com"
-export ZENDESK_TOKEN="rLkB5KBR8IkAiUIdlff7SUXsr95FwyG92P7DuzKh"
