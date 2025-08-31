@@ -28,6 +28,10 @@ conditionally_prefix_path /usr/local/sbin
 conditionally_prefix_path /usr/local/share/npm/bin
 conditionally_prefix_path /usr/local/mysql/bin
 conditionally_prefix_path /usr/local/heroku/bin
+conditionally_prefix_path ~/.local/bin
+conditionally_prefix_path ~/.local/mbc_tools
+conditionally_prefix_path ~/.local/mbc_tools/scripts
+conditionally_prefix_path ~/.emacs.d/bin
 
 . "$HOME/.asdf/asdf.sh"
 
@@ -189,3 +193,10 @@ export PGGSSENCMODE=disable
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/aedwards/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+export VISUAL="code -n"
+
+# zendesk MCP setup
+export ZENDESK_DOMAIN="mbc1.zendesk.com"
+export ZENDESK_EMAIL="aedwards@merchantsbonding.com"
+export ZENDESK_TOKEN="rLkB5KBR8IkAiUIdlff7SUXsr95FwyG92P7DuzKh"
